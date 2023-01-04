@@ -10,7 +10,7 @@ const gitReducer = (state = initialState, action) => {
 			return { ...state, isLoading: true };
 		case "GET_LIST_REPO_REJECTED":
 			return { ...state, isError: true };
-		case "GET_LIST_REPO_FULLFILED":
+		case "GET_LIST_REPO_FULFILLED":
 			return { ...state, isLoading: false, data: action.payload.data };
 		default:
 			return state;
